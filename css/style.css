@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Pecita;
+  src: url("/fonts/Pecita.otf") format("opentype");
+}
+
+ol, ul {
+  margin-bottom: 0;
+}
+
+a:focus {
+  text-decoration: underline;
+  outline: 2px solid rgb(129, 214, 179);
+}
+
+.chess:target,
+.chess2:target {
+  background: whitesmoke;
+  outline: 2px solid firebrick;
+}
+
+.chess {
+  margin-top: 8px;
+}
+
+.chess td {
+  width: 8cm;
+}
+
+.chess svg { 
+  height: 8cm;
+  width: 8cm;
+}
+
+.chess td:first-child {
+  vertical-align: top;
+}
+
+.chess2 > tbody > tr > td {
+  padding-left: .3em;
+}
