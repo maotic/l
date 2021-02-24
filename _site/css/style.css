@@ -9,7 +9,17 @@ ol, ul {
 
 a:focus {
   text-decoration: underline;
-  outline: 2px solid rgb(129, 214, 179);
+  outline: 2px solid rgb(76, 77, 76);
+}
+
+td, th {
+  vertical-align: top;
+  text-align: left;
+}
+
+.icon22 {
+  height: 22px;
+  vertical-align: middle;
 }
 
 .chess:target,
@@ -31,10 +41,59 @@ a:focus {
   width: 8cm;
 }
 
-.chess td:first-child {
-  vertical-align: top;
-}
-
 .chess2 > tbody > tr > td {
   padding-left: .3em;
+}
+
+ul {
+  /* list-style-image: url(/images/disc.png); */
+  list-style: none;
+}
+
+ul li {
+  position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
+  /* use padding-bottom instead of margin-bottom.*/ 
+  margin-bottom: 0; /* This overrides previously specified margin-bottom */
+  padding-bottom: .1em;
+}
+
+ul li:after {
+  content: url('/images/disc.png');
+  position: absolute;
+  left: -27px;
+  top: 0px;
+}
+
+ul li.active:after {
+  content: url("/images/disc-inverted.png");
+}
+
+ul li.active {
+  font-style: oblique;
+  font-weight: bold;
+}
+
+ul li.active li {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li:before {
+  /* lines */
+  content:"";
+  position: absolute;
+  left: -18px; /* adjust manually */
+  border-left: 1px solid #aaa;
+  height: 100%;
+  width: 1px;
+}
+
+ul li:first-child:before {
+ /* first li's line */
+ top: 6px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+}
+
+ul li:last-child:before {
+  /* last li's line */
+ height: 6px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
 }
