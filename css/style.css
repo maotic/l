@@ -22,6 +22,11 @@ td, th {
   vertical-align: middle;
 }
 
+.icon26 {
+  height: 26px;
+  vertical-align: middle;
+}
+
 .chess:target,
 .chess2:target {
   background: whitesmoke;
