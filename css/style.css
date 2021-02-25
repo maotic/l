@@ -1,6 +1,6 @@
 @font-face {
   font-family: Pecita;
-  src: url("/fonts/Pecita.otf") format("opentype");
+  src: url("/css/fonts/Pecita.otf") format("opentype");
 }
 
 ol, ul {
