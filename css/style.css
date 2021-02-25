@@ -19,11 +19,13 @@ td, th {
 
 .icon22 {
   height: 22px;
+  width: auto;
   vertical-align: middle;
 }
 
 .icon26 {
   height: 26px;
+  width: auto;
   vertical-align: middle;
 }
 
@@ -37,7 +39,8 @@ td, th {
   margin-top: 8px;
 }
 
-.chess td {
+.chess td,
+.chess th {
   width: 8cm;
 }
 
