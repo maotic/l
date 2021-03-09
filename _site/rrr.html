@@ -9,17 +9,16 @@
     <link rel="stylesheet" href="/chessground-assets/theme.css">
   </head>
 <body>
-  <a href="/"><img class="icon28" src="/images/home.svg">Homepage</a>
+  <a href="/"><img class="icon28" src="/images/home.svg" alt="">Homepage</a>
   <div class="grounds">
     <a><span id="ground0" class="ground chess24 gray"></span></a>
   </div>
   <div id="pgn0" class="pgn"></div>
+  <script>
+    var pgn =  [
+      `[Variant "Atomic"] 1. Nf3 f6 2. Nc3 Nh6 3. g4 c6 4. d4 e6 5. Ng5 f5 6. e4 g6 7. h4 fxg4 8. Bg5 Qc7 9. Be7 Bg7 10. f4 Ng4 (10... Na6 11. d5 Qb8 (11... Nb4 12. dxc6 Nd3+ (12... Nxc2 13. Bb5 Kf7 14. f5 Kg8 15. fxg6) 13. cxd3 Bd4 14. Bb5 Kf7 15. h5) 12. Nb5) 11. Bb5 Ne3 12. Qe2 Qa5 13. f5 { [%cal Gd7d5,Ga5b4] } 13... d5 (13... Qb4 14. Qf3 { [%cal Gg7e5,Ge3g2,Gb4c4] } 14... Ng2+ (14... Be5 15. dxe5 Ng2+ 16. Kf1 h5 (16... Qd4 17. Rd1)  (16... Ne3+)  (16... Nf4 17. f6 Qc4+ 18. Bxc4 Kf7 19. Qg4) 17. f6 Kf7 18. Bc4 d5 19. e5 Rh7 (19... Ne3+ 20. Ke2 Nf5 (20... Ng4 21. Bd3 Qxc3 22. Qd3 Ke8 23. f7+ Kd7 24. Qc4)  (20... Qb6 21. Qh3 Ng4 (21... Nf5 22. Rhg1) 22. Bd3) 21. Rhg1 Ng3+ 22. Ke1 g5 23. Bd3 Qxc3 24. Qd3 Ne4 25. hxg5 Ke8 26. Qh3) 20. Bd3 Qxc3 21. Qd3 Kg8 22. f7+ Kh8 23. Qa3 c5 24. Bxc5)  (14... Qc4 15. Bxc4 Ng2+ (15... d5 16. exd5 Ng2+ (16... Bf6 17. fxg6 Ng2+ 18. Kf2 Nf4 19. Qa3)  (16... Be5 17. f6 Bg3+ (17... Ng2+ 18. Ke2 Ne1 19. Qg4) 18. Ke2) 17. Kf2 Nf4 (17... Bh6 18. f6 Be3+ 19. Kf1 Kf7 20. h5 g5 21. Qg4) 18. f6 Bxf6 19. Qa3)  (15... Be5 16. f6 Bg3+ 17. Ke2 Kf7 18. Rag1 g5 19. hxg5) 16. Kf1 Nf4 17. Qa3 d6 18. Bxd6 c5 19. Qa4+ b5 20. Qa5 O-O 21. Qc7 Nd7 22. Qd6 Kh8 23. Qe7 Rf7 24. fxg6) 15. Kf1 Nf4) 14. Qf2 Ng2+ 15. Kf1 Nf4 16. Qg3 h6 (16... Bf6 17. fxg6 Rg8 18. Qg7 Rxg7 19. Rh3 e5 (19... Nxh3 20. e5 Qb4 (20... Kf7 21. Kg1 Qxa2 22. Be2 h5 23. Bd3 b6 24. Ne2 Nd7 25. Bh7 Ba6 26. Bg8+ Kg7 27. Bf8+ Kg6 28. Ng3)  (20... Nd7 21. Kg1 Qxa2 (21... Nf6 22. Rf1 Bd7 23. Bd8) 22. Be2 h5 (22... Nf6 23. Nb5) 23. Bd3 Kf7 24. Ne2 Kg7 25. Bh7 Nxe5 26. Bg8 e5 27. Bf8+ Kg6 28. Ng3)  (20... Qxa2 21. Be2 h5 22. Bd3 Kf7 23. Ne2 Nd7 24. Bh7 Kg7 25. Bg8 Kh8 (25... Nxe5 26. Bf8+ Kg6 27. Nf4+) 26. Nf4) 21. Re1 Nd7 22. Kg1 Nf6 23. Be2 Qb5 (23... h5 24. Nb5 Qxb5 25. Bd3) 24. Nxb5 Kd7 25. Bh5 Nxh5 26. Rf1)  (19... Qb4 20. Rg3 (20. e5 Nd7 (20... Nxh3 21. Rd1 Nd7 22. Be2 Nf6 23. Bh5+ Nxh5 24. Kg2)  (20... Qxb2 21. Rg3 Ng6 22. h5) 21. Rg3 Ng6 22. h5 b6 23. Kg1 Qxb2 24. hxg6 Nf6 25. Rg7 Ba6 26. Rf7) 20... Ng6 21. Kg1 Qxb2 22. Rg2 cxb5 23. h5 e5 24. Rf2 Nf4 25. dxe5 Bf5 26. exf5 d4 27. Rf8+ Kd7 28. Rf7)  (19... Ng6 20. Kg1 Qxa2 21. Rf3 Nf4 (21... dxe4 22. Bc4 Nf4 23. Ne4 Ne2+ 24. Bxe2 Kf7 25. Ng5+ Ke8 26. Nf7) 22. exd5 cxb5 (22... h6 23. Bc4 b5 24. Ne4) 23. Ne4 Kf7 24. Ng5+ Ke8 25. Nf7)  (19... Nd7 20. Rg3 Ng6 21. h5) 20. dxe5 Qb4 (20... Bg4 21. Kg1 Nd7 (21... Qxa2) 22. Rf1 Nf6)  (20... Qxa2 21. e5 (21. exd5))  (20... h5)  (20... Bxh3 21. Ke2 Nd7 (21... Qxa2 22. exd5 cxb5 23. Nb5 Nc6 24. Nd6+ Kd7 25. Nxb7) 22. Rg1 Nf6 23. Rg7) 21. Re1 Bg4 (21... Bxh3 22. Kg2 Nd7 23. Rf1 Nf6 24. Bxf6 h5 (24... O-O-O 25. Rf7 Qe7 26. Rxe7)  (24... dxe4 25. Rf8+ Ke7 26. Ne4 Qxe4 (26... Qd4 27. Re8+ Kf7 28. Re7+ Kf8 29. Rf7+ Ke8 30. Nd6+ Qxd6 31. Bd3) 27. Bxc6) 25. Rf8+ Ke7 26. Bc4 dxe4 (26... Qb6 27. Rf7+ Ke8 28. Rxb7) 27. Rf7+ Kd8 (27... Kd6 28. Ne4+ Ke5 29. Kh2 Qd2+ 30. Be2 Qe3 (30... b5 31. Rf5+ Ke6 32. Re5+ Kf7 33. Re7+ Kf8) 31. Rf5+ Ke6) 28. Ne4 Qd2+ 29. Nxd2) 22. Kg1 Nd7 23. Rf1 Nf6 24. Rg3 dxe4 (24... d4 25. Bxf6)  (24... a5 25. Bxf6 Bf3 26. Rg8+ Ke7 27. Re8+ Kf7 28. e5 h5 29. e6+ Kf6 30. Rg8) 25. Bc4 Qxc4 (25... Qc5+ 26. Re3) 26. Rf4)  (16... Nd7 17. f6 Bxf6 18. Qg5 Nf6 19. Qh6) 17. h5 Rg8 (17... g5 18. Bxg5 Bxd4 19. c3 Rg8 20. f6) 18. hxg6 Nd7 19. Ba6 Qb4 (19... b6 20. Bb7 Nf6 21. Qg7 Rxg7 22. Bb4 Qxb4) 20. Bxb7 Qb8 21. Bd6 Qc8 22. f6 Nxf6 23. Qg4 Qd8 24. Be7 *`
+    ]
+  </script>
+  <script src="/random/build/app.js"></script>
 </body>
-
-<script>
-  var pgn =  [
-    `[Variant "Atomic"] 1. Nh3 h6 2. d4 e6 3. Bg5 f6 4. Bf4 e5 5. Na3 a6 6. c3 d5 7. e4 Ne7 8. Nc4 Ng6 9. Na5 Nh4 10. Nxb7 Nxg2 11. exd5`
-  ]
-</script>
-<script src="/random/build/app.js"></script>
 	
