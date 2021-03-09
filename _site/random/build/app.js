@@ -2011,23 +2011,17 @@ var groundOptions = {
         enabled: true,  // enable piece animations, moving and fading
         duration: 165,  // animation duration in milliseconds
     },
-    highlight: {
-        lastMove: true,       // add last-move class to squares
-        check: true,          // add check class to squares
-        dragOver: true        // add drag-over class to square when dragging over it
-    },
+    // highlight: {
+    //     lastMove: true,       // add last-move class to squares
+    //     check: true,          // add check class to squares
+    //     dragOver: true        // add drag-over class to square when dragging over it
+    // },
     movable: {
-        free: false, // all moves are valid - board editor
-        color: "both", // color that can move. "white" | "black" | "both" | null
-        dests: {}, // valid moves. {a2: ["a3", "a4"], b1: ["a3", "c3"]} | null
-        dropOff: "revert", // when a piece is dropped outside the board. "revert" | "trash"
-        showDests: true, // add the move-dest class to squares
-        events: {
-            // called after the move has been played
-            after: function(orig, dest, metadata) {
-                console.log('' + orig + ' ' + dest + ' ' + metadata);
-            }
-        }
+        // free: false, // all moves are valid - board editor
+        color: null, // color that can move. "white" | "black" | "both" | null
+        // dests: {}, // valid moves. {a2: ["a3", "a4"], b1: ["a3", "c3"]} | null
+        // dropOff: "revert", // when a piece is dropped outside the board. "revert" | "trash"
+        // showDests: true, // add the move-dest class to squares
     }
 };
 
