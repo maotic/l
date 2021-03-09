@@ -1,0 +1,59 @@
+svg.cg-shapes {
+  opacity: 0.15;
+}
+
+/*
+ * Board
+ */
+.gray .cg-board {
+  background: repeating-conic-gradient(#aaa 0% 25%, #edebe9 0% 50%) 50% / 25% 25%;
+  outline: 2px solid #b5b5b5;
+ }
+.blue .cg-board {
+  background-image: url('images/board/blue2.jpg');
+}
+.wood .cg-board {
+  background-image: url('images/board/wood2.jpg');
+}
+.marble .cg-board {
+  background-image: url('images/board/marble.jpg');
+}
+/*
+ * Pieces
+ */
+.chess24 piece.pawn.white {
+  background-image: url('images/pieces/chess24/wP.png');
+}
+.chess24 piece.bishop.white {
+  background-image: url('images/pieces/chess24/wB.png');
+}
+.chess24 piece.knight.white {
+  background-image: url('images/pieces/chess24/wN.png');
+}
+.chess24 piece.rook.white {
+  background-image: url('images/pieces/chess24/wR.png');
+}
+.chess24 piece.queen.white {
+  background-image: url('images/pieces/chess24/wQ.png');
+}
+.chess24 piece.king.white {
+  background-image: url('images/pieces/chess24/wK.png');
+}
+.chess24 piece.pawn.black {
+  background-image: url('images/pieces/chess24/bP.png');
+}
+.chess24 piece.bishop.black {
+  background-image: url('images/pieces/chess24/bB.png');
+}
+.chess24 piece.knight.black {
+  background-image: url('images/pieces/chess24/bN.png');
+}
+.chess24 piece.rook.black {
+  background-image: url('images/pieces/chess24/bR.png');
+}
+.chess24 piece.queen.black {
+  background-image: url('images/pieces/chess24/bQ.png');
+}
+.chess24 piece.king.black {
+  background-image: url('images/pieces/chess24/bK.png');
+}

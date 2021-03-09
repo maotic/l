@@ -17,10 +17,26 @@ td, th {
   text-align: left;
 }
 
+.hr-1 {
+  border: 0;
+  border-bottom: 6px dashed #eee;
+  background: rgb(160, 201, 85);
+}
+
+.hr-2 { 
+  border: 0;
+  border-bottom: 6px dashed #eee;
+  background: rgb(85, 97, 201);
+}
+
 .icon22 {
   height: 22px;
   width: auto;
   vertical-align: middle;
+}
+
+a > .icon22 {
+  outline: 1px solid burlywood;
 }
 
 .icon26 {
@@ -29,19 +45,37 @@ td, th {
   vertical-align: middle;
 }
 
-.chess:target,
-.chess2:target {
-  background: whitesmoke;
-  outline: 2px solid firebrick;
+@media (min-width: 1300px) {
+  .side-by-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .side-by-side hr {
+    display: none;
+  }
 }
 
 .chess {
-  margin-top: 8px;
+  margin: 8px 0;
+}
+
+.chess:target {
+  background:papayawhip;
 }
 
 .chess td,
 .chess th {
   width: 8cm;
+}
+
+.chess th {
+  background: azure;
+  font-weight: normal;
+}
+
+.chess td p {
+  min-width: 8cm;
 }
 
 .chess svg { 
@@ -56,6 +90,7 @@ td, th {
 ul {
   /* list-style-image: url(/images/disc.png); */
   list-style: none;
+  min-width: max-content; /* don't horizontally squish lists on narrow screen sizes */
 }
 
 ul li {
@@ -74,6 +109,11 @@ ul li:after {
 
 ul li.active:after {
   content: url("/images/disc-inverted.png");
+}
+
+ul li.active > a {
+  font-style: oblique;
+  font-weight: bold;
 }
 
 ul li.active {
